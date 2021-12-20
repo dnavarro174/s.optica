@@ -1,6 +1,6 @@
 
     <div class="form-group">
-        <label id="nom_caja">NOMBRE</label>
+        <label id="nom_caja">NOMBRE CAJA</label>
         <input type="text" class="form-control text-uppercase" id="nom_caja" name="nom_caja" placeholder="Nombre de la caja" required="" value="{{ old('nom_caja') }}" >
         
     </div>
