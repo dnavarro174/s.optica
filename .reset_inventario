@@ -1,0 +1,16 @@
+TRUNCATE `control_periodo_inv`;
+TRUNCATE `conversion_monedas`;
+TRUNCATE `cuentas_corrientes`;
+
+TRUNCATE `error_calc_costo`;
+TRUNCATE `fac_venta`;
+TRUNCATE `movimientos`;
+TRUNCATE `productos`;
+TRUNCATE `proyectos`;
+
+TRUNCATE `saldo_i`;
+TRUNCATE `saldo_ic`;
+TRUNCATE `salidas`;
+TRUNCATE `salidas_detalle`;
+TRUNCATE `stock_articulos_alm`;
+TRUNCATE `tipo_de_cambio`;

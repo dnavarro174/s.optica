@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes descend {
+  from {
+    top: 45%;
+  }
+  to {
+    top: 50%;
+  }
+}
+#login-page-container {
+  width: 100%;
+  height: 100%;/*600px;*/
+  background-image: url("http://angular-material.fusetheme.com/assets/images/backgrounds/dark-material-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  color: white;
+}
+#login-page-container #login-page-inner {
+  width: 400px;
+  position: relative;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out, descend 0.5s ease-in-out;
+}
+#login-page-container #login-page-inner #user-image-container,
+#login-page-container #login-page-inner #username-container,
+#login-page-container #login-page-inner #input-container {
+  text-align: center;
+}
+#login-page-container #login-page-inner #user-image-container {
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  font-size: 110%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#login-page-container #login-page-inner #user-image-container .fa-user-o {
+  line-height: 140px;
+  color: white;
+}
+#login-page-container #login-page-inner #username-container {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-family: "Roboto";
+  font-size: 105%;
+  color: white;
+}
+#login-page-container #login-page-inner #input-container {
+  height: 50px;
+}
+#login-page-container #login-page-inner #input-container input {
+    margin: 5px auto;
+    height: 30px;
+    width: 300px;
+    padding: 5px 0px;
+    padding-left: 10px;
+}
+#login-page-container #login-page-inner #input-container #password {
+    width: 265px;
+}
+#login-page-container #login-page-inner #input-container #submit {
+  height: 31px;
+  padding: 0 10px;
+  position: relative;
+  /*right: 5px;*/
+  background-color: #bdbdbd;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+#login-page-container #login-page-inner #input-container #submit .fa-arrow-right {
+  line-height: 28px;
+  color: white;
+}
+#login-page-container #login-page-inner #input-container #submit:hover {
+  background-color: #9e9e9e;
+}
+
+@media (min-width: 330px) and (max-width: 449px) {
+  #login-page-container {
+    font-size: 12px !important;
+  }
+
+  #login-page-inner {
+    width: 300px !important;
+  }
+
+  #user-image-container {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .fa-user-o {
+    line-height: 110px !important;
+  }
+
+  input {
+    width: 200px !important;
+  }
+}
